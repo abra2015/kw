@@ -13,6 +13,7 @@ $dotenv->load();
 /**
  * Init application constants
  */
+define('YII_ENV_DEV', true);
 defined('YII_DEBUG') or define('YII_DEBUG', env('YII_DEBUG'));
 defined('YII_ENV') or define('YII_ENV', env('YII_ENV', 'prod'));
 

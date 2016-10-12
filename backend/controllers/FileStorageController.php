@@ -84,7 +84,7 @@ class FileStorageController extends Controller
         return $this->render('view', [
             'model' => $this->findModel($id)
         ]);
-    }
+     }
 
     /**
      * Deletes an existing FileStorageItem model.

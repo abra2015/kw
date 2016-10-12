@@ -1,0 +1,215 @@
+[Mon Oct 03 23:56:41.047238 2016] [mpm_prefork:notice] [pid 15543] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.19 configured -- resuming normal operations
+[Mon Oct 03 23:56:41.047363 2016] [core:notice] [pid 15543] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Oct 04 00:13:38.732537 2016] [authz_core:error] [pid 15556] [client 185.77.102.78:15152] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/gii
+[Tue Oct 04 00:13:52.297911 2016] [authz_core:error] [pid 15549] [client 185.77.102.78:15159] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/gii
+[Tue Oct 04 00:18:35.261037 2016] [authz_core:error] [pid 15557] [client 185.77.102.78:15211] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/gii
+[Tue Oct 04 00:20:53.570782 2016] [authz_core:error] [pid 15557] [client 185.77.102.78:15222] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/gii
+[Tue Oct 04 00:28:57.113571 2016] [:error] [pid 16211] [client 185.77.102.78:15329] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/gennadii/karabasweb.com/frontend/config/web.php on line 83
+[Tue Oct 04 00:29:00.085201 2016] [:error] [pid 16584] [client 185.77.102.78:15334] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/gennadii/karabasweb.com/frontend/config/web.php on line 83
+[Tue Oct 04 00:31:38.912260 2016] [authz_core:error] [pid 15556] [client 185.77.102.78:15376] AH01630: client denied by server configuration: /var/www/html/admin
+[Tue Oct 04 00:33:30.318348 2016] [:error] [pid 16594] [client 185.77.102.78:15411] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/gennadii/karabasweb.com/frontend/config/web.php on line 75
+[Tue Oct 04 00:33:33.096799 2016] [:error] [pid 15548] [client 185.77.102.78:15412] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/gennadii/karabasweb.com/frontend/config/web.php on line 75
+[Tue Oct 04 00:35:10.292018 2016] [:error] [pid 16921] [client 185.77.102.78:15437] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/gennadii/karabasweb.com/frontend/config/web.php on line 75
+[Tue Oct 04 00:36:19.548914 2016] [:error] [pid 16924] [client 185.77.102.78:15447] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/gennadii/karabasweb.com/frontend/config/web.php on line 75
+[Tue Oct 04 01:03:58.393114 2016] [authz_core:error] [pid 16921] [client 141.8.143.183:44767] AH01630: client denied by server configuration: /var/www/html/robots.txt
+[Tue Oct 04 01:04:02.318322 2016] [authz_core:error] [pid 16921] [client 141.8.143.183:44767] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 01:06:01.998558 2016] [authz_core:error] [pid 15557] [client 100.43.91.12:51532] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 01:08:07.721318 2016] [authz_core:error] [pid 16589] [client 141.8.143.192:63527] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 01:37:59.657050 2016] [authz_core:error] [pid 16959] [client 5.255.250.23:55392] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 01:58:13.621132 2016] [authz_core:error] [pid 15556] [client 141.8.143.224:64067] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 02:00:18.729237 2016] [authz_core:error] [pid 17267] [client 5.255.250.55:49443] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 02:14:43.962642 2016] [authz_core:error] [pid 17179] [client 141.8.143.219:46229] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 02:42:42.385391 2016] [authz_core:error] [pid 16988] [client 100.43.91.12:55336] AH01630: client denied by server configuration: /var/www/html/robots.txt
+[Tue Oct 04 02:42:46.343026 2016] [authz_core:error] [pid 16988] [client 100.43.91.12:55336] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 02:44:34.312247 2016] [authz_core:error] [pid 15720] [client 141.8.143.192:35102] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 03:22:42.458380 2016] [core:error] [pid 16921] [client 208.64.253.242:47969] AH00126: Invalid URI in request GET HTTP/1.1 HTTP/1.1
+[Tue Oct 04 03:22:42.584853 2016] [authz_core:error] [pid 15557] [client 208.64.253.242:48339] AH01630: client denied by server configuration: /var/www/html/admin
+[Tue Oct 04 03:28:13.546728 2016] [authz_core:error] [pid 16589] [client 186.220.253.32:54270] AH01630: client denied by server configuration: /var/www/html/manager
+[Tue Oct 04 03:29:17.214024 2016] [authz_core:error] [pid 16924] [client 141.8.143.187:65461] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 03:31:22.012035 2016] [authz_core:error] [pid 16959] [client 5.255.250.23:41061] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 03:59:42.812484 2016] [authz_core:error] [pid 15556] [client 63.141.250.155:50361] AH01630: client denied by server configuration: /var/www/html/
+[Tue Oct 04 04:04:06.657748 2016] [authz_core:error] [pid 17267] [client 141.8.143.224:37412] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 04:06:12.471776 2016] [authz_core:error] [pid 17179] [client 5.255.250.55:49449] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 04:08:18.395855 2016] [authz_core:error] [pid 16988] [client 141.8.143.219:56428] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 04:10:47.620654 2016] [authz_core:error] [pid 15720] [client 5.255.250.38:51387] AH01630: client denied by server configuration: /var/www/html/
+[Tue Oct 04 04:47:27.919304 2016] [authz_core:error] [pid 15557] [client 141.8.143.183:51696] AH01630: client denied by server configuration: /var/www/html/robots.txt
+[Tue Oct 04 04:48:09.893864 2016] [authz_core:error] [pid 16921] [client 100.43.91.12:51421] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 04:49:30.705337 2016] [authz_core:error] [pid 16589] [client 5.255.250.57:61065] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 04:57:21.815702 2016] [authz_core:error] [pid 16924] [client 5.255.250.23:45365] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 04:59:28.398138 2016] [authz_core:error] [pid 16959] [client 5.255.250.50:38457] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 05:29:33.126240 2016] [authz_core:error] [pid 15556] [client 77.121.118.17:46913] AH01630: client denied by server configuration: /var/www/html/
+[Tue Oct 04 11:44:33.807146 2016] [authz_core:error] [pid 15557] [client 93.174.93.210:60000] AH01630: client denied by server configuration: /var/www/html/
+[Tue Oct 04 12:34:28.998022 2016] [authz_core:error] [pid 16921] [client 195.62.53.168:60938] AH01630: client denied by server configuration: /var/www/html/engine
+[Tue Oct 04 15:47:00.567331 2016] [authz_core:error] [pid 16921] [client 46.172.91.20:49927] AH01630: client denied by server configuration: /var/www/html/
+[Tue Oct 04 18:02:10.513646 2016] [authz_core:error] [pid 17267] [client 92.255.232.87:59184] AH01630: client denied by server configuration: /var/www/html/
+[Tue Oct 04 18:38:59.305111 2016] [authz_core:error] [pid 17179] [client 141.8.143.183:57110] AH01630: client denied by server configuration: /var/www/html/robots.txt
+[Tue Oct 04 18:39:03.135648 2016] [authz_core:error] [pid 17179] [client 141.8.143.183:57110] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 20:23:55.384787 2016] [authz_core:error] [pid 16959] [client 141.8.143.183:55611] AH01630: client denied by server configuration: /var/www/html/robots.txt
+[Tue Oct 04 20:23:59.216626 2016] [authz_core:error] [pid 16959] [client 141.8.143.183:55611] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 21:28:46.371156 2016] [authz_core:error] [pid 16589] [client 100.43.90.9:50975] AH01630: client denied by server configuration: /var/www/html/robots.txt
+[Tue Oct 04 21:28:50.314388 2016] [authz_core:error] [pid 16589] [client 100.43.90.9:50975] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 22:17:56.674021 2016] [authz_core:error] [pid 15557] [client 141.8.143.183:58389] AH01630: client denied by server configuration: /var/www/html/robots.txt
+[Tue Oct 04 22:18:00.510438 2016] [authz_core:error] [pid 15557] [client 141.8.143.183:58389] AH01630: client denied by server configuration: /var/www/html/uploads
+[Tue Oct 04 22:21:32.520972 2016] [authz_core:error] [pid 15291] [client 100.43.91.12:35266] AH01630: client denied by server configuration: /var/www/html/uploads
+[Wed Oct 05 00:25:11.186252 2016] [authz_core:error] [pid 16921] [client 63.141.250.154:34114] AH01630: client denied by server configuration: /var/www/html/
+[Wed Oct 05 01:30:00.679389 2016] [authz_core:error] [pid 17179] [client 141.212.122.32:3356] AH01630: client denied by server configuration: /var/www/html/
+[Wed Oct 05 12:45:38.919429 2016] [authz_core:error] [pid 16061] [client 63.141.250.154:46754] AH01630: client denied by server configuration: /var/www/html/
+[Wed Oct 05 06:55:23.837699 2016] [authz_core:error] [pid 19366] [client 66.240.192.138:40224] AH01630: client denied by server configuration: /var/www/html/
+[Wed Oct 05 13:55:26.966897 2016] [authz_core:error] [pid 19293] [client 66.240.192.138:40556] AH01630: client denied by server configuration: /var/www/html/robots.txt
+[Wed Oct 05 13:56:49.334261 2016] [authz_core:error] [pid 19370] [client 66.240.192.138:44379] AH01630: client denied by server configuration: /var/www/html/sitemap.xml
+[Wed Oct 05 16:31:18.484722 2016] [authz_core:error] [pid 16061] [client 162.243.188.75:41438] AH01630: client denied by server configuration: /var/www/html/
+[Wed Oct 05 11:00:08.459988 2016] [authz_core:error] [pid 19802] [client 93.174.93.210:60000] AH01630: client denied by server configuration: /var/www/html/
+[Wed Oct 05 18:19:27.404181 2016] [authz_core:error] [pid 19366] [client 192.187.118.67:38190] AH01630: client denied by server configuration: /var/www/html/
+[Wed Oct 05 21:12:58.379681 2016] [authz_core:error] [pid 19370] [client 180.97.106.37:12180] AH01630: client denied by server configuration: /var/www/html/check_proxy
+[Wed Oct 05 17:14:16.118386 2016] [authz_core:error] [pid 15557] [client 179.210.129.172:56186] AH01630: client denied by server configuration: /var/www/html/cgi
+[Thu Oct 06 00:14:16.472956 2016] [authz_core:error] [pid 19095] [client 179.210.129.172:56188] AH01630: client denied by server configuration: /var/www/html/stssys.htm
+[Thu Oct 06 00:14:16.840988 2016] [authz_core:error] [pid 19124] [client 179.210.129.172:56193] AH01630: client denied by server configuration: /var/www/html/
+[Thu Oct 06 00:14:17.263784 2016] [authz_core:error] [pid 16357] [client 179.210.129.172:56196] AH01630: client denied by server configuration: /var/www/html/command.php
+[Thu Oct 06 04:54:10.827966 2016] [authz_core:error] [pid 19370] [client 199.33.125.108:65502] AH01630: client denied by server configuration: /var/www/html/
+[Thu Oct 06 07:09:05.807995 2016] [authz_core:error] [pid 19293] [client 169.56.71.55:52833] AH01630: client denied by server configuration: /var/www/html/
+[Thu Oct 06 00:36:16.092511 2016] [authz_core:error] [pid 15557] [client 218.92.147.79:51988] AH01630: client denied by server configuration: /var/www/html/
+[Thu Oct 06 07:36:21.211675 2016] [authz_core:error] [pid 19095] [client 218.92.147.79:19248] AH01630: client denied by server configuration: /var/www/html/uploadify, referer: http://159.203.34.202
+[Thu Oct 06 07:36:27.662491 2016] [authz_core:error] [pid 19124] [client 218.92.147.79:19598] AH01630: client denied by server configuration: /var/www/html/uploadify.css, referer: http://159.203.34.202
+[Thu Oct 06 07:36:28.274851 2016] [authz_core:error] [pid 16357] [client 218.92.147.79:20374] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://159.203.34.202
+[Thu Oct 06 07:36:28.779388 2016] [authz_core:error] [pid 16061] [client 218.92.147.79:20987] AH01630: client denied by server configuration: /var/www/html/public, referer: http://159.203.34.202
+[Thu Oct 06 00:36:37.372735 2016] [authz_core:error] [pid 19802] [client 218.92.147.79:52132] AH01630: client denied by server configuration: /var/www/html/js, referer: http://159.203.34.202
+[Thu Oct 06 07:37:09.868910 2016] [authz_core:error] [pid 19366] [client 218.92.147.79:55811] AH01630: client denied by server configuration: /var/www/html/include, referer: http://159.203.34.202
+[Thu Oct 06 07:37:10.431737 2016] [authz_core:error] [pid 19370] [client 218.92.147.79:56689] AH01630: client denied by server configuration: /var/www/html/data, referer: http://159.203.34.202
+[Thu Oct 06 07:37:11.087908 2016] [authz_core:error] [pid 19793] [client 218.92.147.79:6030] AH01630: client denied by server configuration: /var/www/html/Public, referer: http://159.203.34.202
+[Thu Oct 06 07:37:20.515270 2016] [authz_core:error] [pid 19293] [client 218.92.147.79:46963] AH01630: client denied by server configuration: /var/www/html/addons, referer: http://159.203.34.202
+[Thu Oct 06 00:37:38.472784 2016] [authz_core:error] [pid 15557] [client 218.92.147.79:9507] AH01630: client denied by server configuration: /var/www/html/script, referer: http://159.203.34.202
+[Thu Oct 06 07:37:39.043007 2016] [authz_core:error] [pid 19095] [client 218.92.147.79:11666] AH01630: client denied by server configuration: /var/www/html/inc, referer: http://159.203.34.202
+[Thu Oct 06 07:37:39.655526 2016] [authz_core:error] [pid 19124] [client 218.92.147.79:13221] AH01630: client denied by server configuration: /var/www/html/general, referer: http://159.203.34.202
+[Thu Oct 06 07:37:40.290304 2016] [authz_core:error] [pid 16357] [client 218.92.147.79:15055] AH01630: client denied by server configuration: /var/www/html/uploadify, referer: http://159.203.34.202
+[Thu Oct 06 07:39:42.627255 2016] [authz_core:error] [pid 16061] [client 218.92.147.79:5697] AH01630: client denied by server configuration: /var/www/html/bocadmin, referer: http://159.203.34.202
+[Thu Oct 06 00:39:43.189099 2016] [authz_core:error] [pid 19802] [client 218.92.147.79:6571] AH01630: client denied by server configuration: /var/www/html/css, referer: http://159.203.34.202
+[Thu Oct 06 07:39:43.787897 2016] [authz_core:error] [pid 19366] [client 218.92.147.79:7623] AH01630: client denied by server configuration: /var/www/html/common, referer: http://159.203.34.202
+[Thu Oct 06 07:39:45.438893 2016] [authz_core:error] [pid 19370] [client 218.92.147.79:14392] AH01630: client denied by server configuration: /var/www/html/lib, referer: http://159.203.34.202
+[Thu Oct 06 07:39:59.459240 2016] [authz_core:error] [pid 19793] [client 218.92.147.79:64032] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://159.203.34.202
+[Thu Oct 06 07:42:01.142410 2016] [authz_core:error] [pid 19293] [client 218.92.147.79:54572] AH01630: client denied by server configuration: /var/www/html/js, referer: http://159.203.34.202
+[Thu Oct 06 00:42:01.710733 2016] [authz_core:error] [pid 15557] [client 218.92.147.79:55230] AH01630: client denied by server configuration: /var/www/html/JS, referer: http://159.203.34.202
+[Thu Oct 06 07:42:14.255297 2016] [authz_core:error] [pid 19095] [client 218.92.147.79:19135] AH01630: client denied by server configuration: /var/www/html/js, referer: http://159.203.34.202
+[Thu Oct 06 07:42:14.887514 2016] [authz_core:error] [pid 19124] [client 218.92.147.79:19465] AH01630: client denied by server configuration: /var/www/html/js, referer: http://159.203.34.202
+[Thu Oct 06 04:21:23.967717 2016] [authz_core:error] [pid 19802] [client 141.8.143.183:35928] AH01630: client denied by server configuration: /var/www/html/robots.txt
+[Thu Oct 06 04:21:27.795629 2016] [authz_core:error] [pid 19802] [client 141.8.143.183:35928] AH01630: client denied by server configuration: /var/www/html/uploads
+[Thu Oct 06 12:58:26.057633 2016] [authz_core:error] [pid 19293] [client 192.187.118.70:52057] AH01630: client denied by server configuration: /var/www/html/
+[Thu Oct 06 15:50:41.290725 2016] [authz_core:error] [pid 16357] [client 204.12.217.4:49831] AH01630: client denied by server configuration: /var/www/html/
+[Thu Oct 06 11:31:50.816711 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/1phpmyadmin
+[Thu Oct 06 11:31:50.911861 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/2phpmyadmin
+[Thu Oct 06 11:31:51.328645 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/3phpmyadmin
+[Thu Oct 06 11:31:51.435652 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/4phpmyadmin
+[Thu Oct 06 11:31:51.843981 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/MyAdmin
+[Thu Oct 06 11:31:53.130105 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/phpmyadmin
+[Thu Oct 06 11:31:53.814227 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/PMA
+[Thu Oct 06 11:31:53.913489 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/PMA2011
+[Thu Oct 06 11:31:53.992357 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/PMA2012
+[Thu Oct 06 11:31:54.361929 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/PMA2013
+[Thu Oct 06 11:31:55.070694 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/PMA2014
+[Thu Oct 06 11:31:55.151944 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/PMA2015
+[Thu Oct 06 11:31:55.239636 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/PMA2016
+[Thu Oct 06 11:31:55.340098 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/admin
+[Thu Oct 06 11:31:55.455485 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/admin
+[Thu Oct 06 11:31:55.532932 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/admin
+[Thu Oct 06 11:31:56.194997 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/admin
+[Thu Oct 06 11:31:57.448127 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/admin
+[Thu Oct 06 11:31:57.815669 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/admin
+[Thu Oct 06 11:31:58.485785 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/admin
+[Thu Oct 06 11:31:59.167770 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/admin
+[Thu Oct 06 11:31:59.243513 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/administrator
+[Thu Oct 06 11:32:00.474207 2016] [authz_core:error] [pid 19802] [client 40.133.106.210:49443] AH01630: client denied by server configuration: /var/www/html/administrator
+[Fri Oct 07 01:18:17.845128 2016] [authz_core:error] [pid 19802] [client 63.141.231.196:52351] AH01630: client denied by server configuration: /var/www/html/
+[Fri Oct 07 03:17:23.629953 2016] [:error] [pid 15557] [client 77.121.118.17:30177] PHP Parse error:  syntax error, unexpected '}', expecting ']' in /home/gennadii/karabasweb.com/backend/controllers/UsersController.php on line 52, referer: http://karabasweb.com/admin/users/?UsersSearch%5Bname%5D=%D1%84%D1%8B%D0%B2%D0%B0%D1%84%D1%8B%D0%B2%D0%B0&UsersSearch%5Bphone%5D=&UsersSearch%5Bemail%5D=&UsersSearch%5Badress%5D=&UsersSearch%5Bcatalog%5D=
+[Fri Oct 07 13:16:29.023620 2016] [authz_core:error] [pid 16061] [client 76.14.129.25:56000] AH01630: client denied by server configuration: /var/www/html/benutzer
+[Fri Oct 07 14:51:45.317351 2016] [authz_core:error] [pid 7340] [client 198.204.247.221:40555] AH01630: client denied by server configuration: /var/www/html/
+[Fri Oct 07 15:15:06.298437 2016] [authz_core:error] [pid 7265] [client 213.128.81.66:61200] AH01630: client denied by server configuration: /var/www/html/
+[Fri Oct 07 15:42:08.185619 2016] [authz_core:error] [pid 19370] [client 69.30.227.222:41340] AH01630: client denied by server configuration: /var/www/html/
+[Fri Oct 07 10:18:04.294552 2016] [authz_core:error] [pid 15557] [client 77.121.118.17:7212] AH01630: client denied by server configuration: /var/www/html/
+[Fri Oct 07 19:26:00.626621 2016] [authz_core:error] [pid 2386] [client 185.93.226.90:49793] AH01630: client denied by server configuration: /var/www/html/
+[Fri Oct 07 21:56:14.784889 2016] [authz_core:error] [pid 16061] [client 186.222.209.133:37906] AH01630: client denied by server configuration: /var/www/html/cgi
+[Fri Oct 07 21:56:15.168594 2016] [authz_core:error] [pid 7340] [client 186.222.209.133:37912] AH01630: client denied by server configuration: /var/www/html/stssys.htm
+[Fri Oct 07 21:56:15.543874 2016] [authz_core:error] [pid 7265] [client 186.222.209.133:37917] AH01630: client denied by server configuration: /var/www/html/
+[Fri Oct 07 21:56:16.032099 2016] [authz_core:error] [pid 19370] [client 186.222.209.133:37920] AH01630: client denied by server configuration: /var/www/html/command.php
+[Fri Oct 07 18:17:51.829968 2016] [authz_core:error] [pid 7887] [client 141.8.143.183:50567] AH01630: client denied by server configuration: /var/www/html/robots.txt
+[Fri Oct 07 18:17:55.650381 2016] [authz_core:error] [pid 7887] [client 141.8.143.183:50567] AH01630: client denied by server configuration: /var/www/html/uploads
+[Fri Oct 07 21:12:05.304156 2016] [authz_core:error] [pid 15557] [client 91.210.144.183:65212] AH01630: client denied by server configuration: /var/www/html/, referer: http://test.karabasweb.com
+[Sat Oct 08 10:21:53.243302 2016] [authz_core:error] [pid 7265] [client 76.14.129.25:64148] AH01630: client denied by server configuration: /var/www/html/benutzer
+[Sat Oct 08 19:46:22.959925 2016] [authz_core:error] [pid 3795] [client 198.204.247.218:33879] AH01630: client denied by server configuration: /var/www/html/
+[Sun Oct 09 09:06:07.855739 2016] [authz_core:error] [pid 7340] [client 183.129.160.229:52997] AH01630: client denied by server configuration: /var/www/html/
+[Sun Oct 09 09:06:07.856066 2016] [authz_core:error] [pid 7055] [client 183.129.160.229:52996] AH01630: client denied by server configuration: /var/www/html/
+[Sun Oct 09 11:10:27.032953 2016] [authz_core:error] [pid 3795] [client 204.12.220.86:51552] AH01630: client denied by server configuration: /var/www/html/
+[Sun Oct 09 19:13:35.333079 2016] [authz_core:error] [pid 1559] [client 173.208.207.130:56717] AH01630: client denied by server configuration: /var/www/html/
+[Sun Oct 09 13:14:33.132605 2016] [authz_core:error] [pid 15557] [client 119.28.20.147:60291] AH01630: client denied by server configuration: /var/www/html/login.action
+[Sun Oct 09 22:27:53.197988 2016] [authz_core:error] [pid 1559] [client 63.141.231.198:49445] AH01630: client denied by server configuration: /var/www/html/
+[Sun Oct 09 23:36:47.882621 2016] [authz_core:error] [pid 3795] [client 183.129.160.229:52296] AH01630: client denied by server configuration: /var/www/html/
+[Sun Oct 09 23:36:47.883039 2016] [authz_core:error] [pid 7265] [client 183.129.160.229:52295] AH01630: client denied by server configuration: /var/www/html/
+[Sun Oct 09 17:26:51.096988 2016] [authz_core:error] [pid 1602] [client 187.23.185.20:57083] AH01630: client denied by server configuration: /var/www/html/cgi
+[Sun Oct 09 17:26:51.490332 2016] [authz_core:error] [pid 17995] [client 187.23.185.20:57086] AH01630: client denied by server configuration: /var/www/html/stssys.htm
+[Mon Oct 10 00:26:51.906365 2016] [authz_core:error] [pid 7887] [client 187.23.185.20:57089] AH01630: client denied by server configuration: /var/www/html/
+[Sun Oct 09 17:26:52.370790 2016] [authz_core:error] [pid 8996] [client 187.23.185.20:57091] AH01630: client denied by server configuration: /var/www/html/command.php
+[Mon Oct 10 01:25:37.380661 2016] [authz_core:error] [pid 7499] [client 192.187.118.69:53058] AH01630: client denied by server configuration: /var/www/html/
+[Mon Oct 10 02:34:44.019759 2016] [authz_core:error] [pid 1559] [client 118.144.35.66:55764] AH01630: client denied by server configuration: /var/www/html/login.action
+[Mon Oct 10 08:51:37.370877 2016] [authz_core:error] [pid 3795] [client 212.92.127.172:44858] AH01630: client denied by server configuration: /var/www/html/
+[Mon Oct 10 09:34:34.776968 2016] [authz_core:error] [pid 16061] [client 40.143.136.38:38292] AH01630: client denied by server configuration: /var/www/html/index.php
+[Mon Oct 10 02:34:34.840811 2016] [authz_core:error] [pid 1602] [client 40.143.136.38:38297] AH01630: client denied by server configuration: /var/www/html/admin
+[Mon Oct 10 03:16:37.196380 2016] [authz_core:error] [pid 17995] [client 142.54.180.66:54848] AH01630: client denied by server configuration: /var/www/html/
+[Mon Oct 10 13:04:20.353595 2016] [authz_core:error] [pid 7887] [client 169.229.3.91:54523] AH01630: client denied by server configuration: /var/www/html/
+[Tue Oct 11 07:45:14.562756 2016] [authz_core:error] [pid 7499] [client 93.158.200.68:54964] AH01630: client denied by server configuration: /var/www/html/muieblackcat
+[Tue Oct 11 00:45:14.812609 2016] [authz_core:error] [pid 1602] [client 93.158.200.68:55598] AH01630: client denied by server configuration: /var/www/html/pma
+[Tue Oct 11 00:45:14.992885 2016] [authz_core:error] [pid 17995] [client 93.158.200.68:55884] AH01630: client denied by server configuration: /var/www/html/mysql
+[Tue Oct 11 07:45:15.175010 2016] [authz_core:error] [pid 7887] [client 93.158.200.68:56336] AH01630: client denied by server configuration: /var/www/html/mysqladmin
+[Tue Oct 11 07:45:15.356502 2016] [authz_core:error] [pid 24543] [client 93.158.200.68:56786] AH01630: client denied by server configuration: /var/www/html/MyAdmin
+[Tue Oct 11 07:45:15.537932 2016] [authz_core:error] [pid 7265] [client 93.158.200.68:57222] AH01630: client denied by server configuration: /var/www/html/myadmin
+[Tue Oct 11 07:45:15.718214 2016] [authz_core:error] [pid 8996] [client 93.158.200.68:57648] AH01630: client denied by server configuration: /var/www/html/phpMyAdmin
+[Tue Oct 11 07:45:15.897844 2016] [authz_core:error] [pid 1559] [client 93.158.200.68:58000] AH01630: client denied by server configuration: /var/www/html/phpmyadmin
+[Tue Oct 11 01:17:47.605916 2016] [authz_core:error] [pid 15557] [client 142.54.180.66:45823] AH01630: client denied by server configuration: /var/www/html/
+[Tue Oct 11 14:09:16.242135 2016] [authz_core:error] [pid 7265] [client 201.52.140.7:47375] AH01630: client denied by server configuration: /var/www/html/cgi
+[Tue Oct 11 14:09:16.640420 2016] [authz_core:error] [pid 7499] [client 201.52.140.7:47382] AH01630: client denied by server configuration: /var/www/html/stssys.htm
+[Tue Oct 11 07:09:17.019062 2016] [authz_core:error] [pid 15557] [client 201.52.140.7:47385] AH01630: client denied by server configuration: /var/www/html/
+[Tue Oct 11 14:09:17.510794 2016] [authz_core:error] [pid 7887] [client 201.52.140.7:47390] AH01630: client denied by server configuration: /var/www/html/command.php
+[Tue Oct 11 14:15:50.775222 2016] [authz_core:error] [pid 8996] [client 212.92.127.201:36079] AH01630: client denied by server configuration: /var/www/html/
+[Tue Oct 11 15:58:08.428795 2016] [authz_core:error] [pid 3795] [client 139.162.13.205:57154] AH01630: client denied by server configuration: /var/www/html/
+[Tue Oct 11 16:05:59.433791 2016] [authz_core:error] [pid 7499] [client 54.169.250.161:47223] AH01630: client denied by server configuration: /var/www/html/
+[Tue Oct 11 16:35:26.501014 2016] [authz_core:error] [pid 31395] [client 77.121.118.17:25096] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/
+[Tue Oct 11 16:46:09.887947 2016] [authz_core:error] [pid 1559] [client 173.208.150.115:56049] AH01630: client denied by server configuration: /var/www/html/
+[Tue Oct 11 09:51:59.097792 2016] [authz_core:error] [pid 32757] [client 77.121.118.17:25171] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/hooks/test
+[Tue Oct 11 09:54:18.282740 2016] [authz_core:error] [pid 2868] [client 77.121.118.17:25186] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/hooks/test
+[Tue Oct 11 09:54:21.269141 2016] [authz_core:error] [pid 2868] [client 77.121.118.17:25186] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/hooks/test
+[Tue Oct 11 16:57:22.367650 2016] [authz_core:error] [pid 1559] [client 77.121.118.17:25197] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/
+[Tue Oct 11 16:57:44.184155 2016] [authz_core:error] [pid 24543] [client 77.121.118.17:25201] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/hooks/test?%D0%B2%D1%8B%D0%B0=%D1%8B%D0%B2%D0%B0%D1%8B%D0%B0
+[Tue Oct 11 10:04:42.673320 2016] [authz_core:error] [pid 32757] [client 77.121.118.17:57834] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/
+[Tue Oct 11 17:04:50.995024 2016] [authz_core:error] [pid 24543] [client 77.121.118.17:57835] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/test
+[Tue Oct 11 17:05:23.413531 2016] [authz_core:error] [pid 24543] [client 77.121.118.17:57848] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/
+[Tue Oct 11 10:05:30.827091 2016] [authz_core:error] [pid 2868] [client 77.121.118.17:57850] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/test
+[Tue Oct 11 10:27:28.281632 2016] [authz_core:error] [pid 32757] [client 77.121.118.17:25436] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/gii
+[Tue Oct 11 10:27:34.736190 2016] [authz_core:error] [pid 15557] [client 77.121.118.17:25437] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/
+[Tue Oct 11 10:27:38.021594 2016] [authz_core:error] [pid 15557] [client 77.121.118.17:25437] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/gii
+[Tue Oct 11 10:32:36.937778 2016] [:error] [pid 3616] [client 77.121.118.17:25697] PHP Fatal error:  Class 'backend\\models\\Category' not found in /home/gennadii/karabasweb.com/backend/models/Product.php on line 43, referer: http://karabasweb.com/admin/gii/crud
+[Tue Oct 11 10:33:05.958492 2016] [:error] [pid 2869] [client 77.121.118.17:25710] PHP Fatal error:  Class 'backend\\models\\Category' not found in /home/gennadii/karabasweb.com/backend/models/Product.php on line 43, referer: http://karabasweb.com/admin/gii/crud
+[Tue Oct 11 10:36:12.100583 2016] [:error] [pid 3616] [client 77.121.118.17:25745] PHP Fatal error:  Class 'ArrayHelper' not found in /home/gennadii/karabasweb.com/backend/views/product/index.php on line 36
+[Tue Oct 11 17:36:39.336307 2016] [:error] [pid 4204] [client 77.121.118.17:25748] PHP Fatal error:  Class 'backend\\modelc\\Cat' not found in /home/gennadii/karabasweb.com/backend/views/product/index.php on line 38
+[Tue Oct 11 18:49:20.697726 2016] [authz_core:error] [pid 5223] [client 173.208.198.10:57539] AH01630: client denied by server configuration: /var/www/html/
+[Tue Oct 11 13:24:10.078269 2016] [authz_core:error] [pid 3616] [client 69.30.227.220:47028] AH01630: client denied by server configuration: /var/www/html/
+[Tue Oct 11 16:20:47.220422 2016] [:error] [pid 20569] [client 185.77.102.78:26733] PHP Parse error:  syntax error, unexpected ';' in /home/gennadii/karabasweb.com/backend/views/users/index.php on line 149, referer: http://karabasweb.com/admin/product/index?ProductSearch%5Bid_category%5D=1&ProductSearch%5Bproduct%5D=&ProductSearch%5Bsize%5D=&ProductSearch%5Bprice%5D=&ProductSearch%5Barticle%5D=&ProductSearch%5Bid%5D=&sort=product
+[Tue Oct 11 23:20:47.572374 2016] [:error] [pid 20487] [client 185.77.102.78:26734] PHP Parse error:  syntax error, unexpected ';' in /home/gennadii/karabasweb.com/backend/views/users/index.php on line 149, referer: http://karabasweb.com/admin/product/index?ProductSearch%5Bid_category%5D=1&ProductSearch%5Bproduct%5D=&ProductSearch%5Bsize%5D=&ProductSearch%5Bprice%5D=&ProductSearch%5Barticle%5D=&ProductSearch%5Bid%5D=&sort=product
+[Tue Oct 11 23:51:06.463237 2016] [:error] [pid 20446] [client 185.77.102.78:26979] PHP Fatal error:  Class 'ArrayHelper' not found in /home/gennadii/karabasweb.com/backend/views/users/_add_order.php on line 18, referer: http://karabasweb.com/admin/users
+[Tue Oct 11 23:51:11.640213 2016] [:error] [pid 20487] [client 185.77.102.78:26980] PHP Fatal error:  Class 'ArrayHelper' not found in /home/gennadii/karabasweb.com/backend/views/users/_add_order.php on line 18, referer: http://karabasweb.com/admin/users
+[Tue Oct 11 16:51:29.675718 2016] [:error] [pid 20749] [client 185.77.102.78:26991] PHP Fatal error:  Class 'ArrayHelper' not found in /home/gennadii/karabasweb.com/backend/views/users/_add_order.php on line 18
+[Wed Oct 12 00:02:58.145039 2016] [:error] [pid 21069] [client 185.77.102.78:27110] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/gennadii/karabasweb.com/backend/views/users/_add_order.php on line 33, referer: http://karabasweb.com/admin/users
+[Tue Oct 11 17:03:16.209986 2016] [:error] [pid 21459] [client 185.77.102.78:27115] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/gennadii/karabasweb.com/backend/views/users/_add_order.php on line 33, referer: http://karabasweb.com/admin/users
+[Wed Oct 12 00:03:21.499761 2016] [:error] [pid 20446] [client 185.77.102.78:27121] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/gennadii/karabasweb.com/backend/views/users/_add_order.php on line 33, referer: http://karabasweb.com/admin/users
+[Tue Oct 11 17:04:08.659181 2016] [:error] [pid 20749] [client 185.77.102.78:27124] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/gennadii/karabasweb.com/backend/views/users/_add_order.php on line 29, referer: http://karabasweb.com/admin/users
+[Wed Oct 12 00:04:30.054255 2016] [:error] [pid 21069] [client 185.77.102.78:27132] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/gennadii/karabasweb.com/backend/views/users/_add_order.php on line 29
+[Wed Oct 12 04:23:52.318493 2016] [authz_core:error] [pid 21145] [client 141.212.122.96:47429] AH01630: client denied by server configuration: /var/www/html/
+[Wed Oct 12 10:13:05.960620 2016] [authz_core:error] [pid 21069] [client 69.30.227.222:48937] AH01630: client denied by server configuration: /var/www/html/
+[Wed Oct 12 17:40:57.228031 2016] [authz_core:error] [pid 19113] [client 122.155.168.168:43276] AH01630: client denied by server configuration: /var/www/html/
+[Wed Oct 12 19:30:28.364418 2016] [:error] [pid 19113] [client 185.77.102.78:53006] PHP Parse error:  syntax error, unexpected '*', expecting function (T_FUNCTION) in /home/gennadii/karabasweb.com/backend/controllers/OrderController.php on line 104, referer: http://karabasweb.com/admin/users
+[Wed Oct 12 12:37:46.052711 2016] [:error] [pid 31450] [client 185.77.102.78:53481] PHP Fatal error:  Call to undefined method Yii::app() in /home/gennadii/karabasweb.com/backend/controllers/OrderController.php on line 68, referer: http://karabasweb.com/admin/users
+[Wed Oct 12 20:06:27.953590 2016] [:error] [pid 19110] [client 185.77.102.78:56243] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/gennadii/karabasweb.com/backend/controllers/OrderController.php on line 79, referer: http://karabasweb.com/admin/users
+[Wed Oct 12 20:06:33.576640 2016] [:error] [pid 9321] [client 185.77.102.78:56256] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/gennadii/karabasweb.com/backend/controllers/OrderController.php on line 79, referer: http://karabasweb.com/admin/users
+[Wed Oct 12 14:23:19.008810 2016] [authz_core:error] [pid 11081] [client 180.97.106.37:45220] AH01630: client denied by server configuration: /var/www/html/check_proxy
+[Wed Oct 12 21:46:57.655141 2016] [authz_core:error] [pid 10972] [client 185.77.102.78:62435] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/users
+[Wed Oct 12 14:48:55.088838 2016] [:error] [pid 14706] [client 185.77.102.78:62689] PHP Fatal error:  Class 'Product' not found in /home/gennadii/karabasweb.com/backend/views/users/_add_order.php on line 28, referer: http://karabasweb.com/admin/users
+[Wed Oct 12 21:55:14.835260 2016] [:error] [pid 11081] [client 185.77.102.78:63175] PHP Parse error:  syntax error, unexpected '}' in /home/gennadii/karabasweb.com/backend/views/users/_add_order.php on line 28, referer: http://karabasweb.com/admin/users
+[Wed Oct 12 15:53:53.698466 2016] [:error] [pid 17273] [client 185.77.102.78:4608] PHP Fatal error:  Class 'backend\\controllers\\User' not found in /home/gennadii/karabasweb.com/backend/controllers/UsersController.php on line 170, referer: http://karabasweb.com/admin/users
+[Wed Oct 12 15:54:02.999660 2016] [:error] [pid 16757] [client 185.77.102.78:4615] PHP Fatal error:  Class 'backend\\controllers\\User' not found in /home/gennadii/karabasweb.com/backend/controllers/UsersController.php on line 170, referer: http://karabasweb.com/admin/users
+[Wed Oct 12 22:54:18.999820 2016] [:error] [pid 16260] [client 185.77.102.78:4644] PHP Fatal error:  Class 'backend\\controllers\\User' not found in /home/gennadii/karabasweb.com/backend/controllers/UsersController.php on line 170
