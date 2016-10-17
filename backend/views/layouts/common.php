@@ -10,6 +10,7 @@
  use yii\helpers\Url;
  use yii\widgets\Breadcrumbs;
  use backend\models\Users;
+ use backend\controllers\OrderController;
 
  $bundle = BackendAsset::register($this);
 ?>
@@ -140,32 +141,51 @@
                 'options' => ['class' => 'header']
             ],
             [
-                'label' => Yii::t('backend', 'Покупатели'),
-                'icon' => '<i class="fa fa-user"></i>',
+                'label' => Yii::t('backend', 'Все покупатели'),
+                'icon' => '<i class="fa fa-male"></i>',
                 'url' => ['/users'],
                 'visible' => Yii::$app->user->can('administrator'),
-                'items' => [
-                    ['label' => Yii::t('backend', 'emails'),
-                        'url' => ['/users/email'],
-                        'icon' => '<i class="fa fa-angle-double-right"></i>',
-                        'badge' => Users::find()->where(['<>', 'email', ''])->count(),
-                        'badgeBgClass' => 'label-success',
-                    ],
-                    ['label' => Yii::t('backend', 'all_users'),
-                        'url' => ['/users/'],
-                        'icon' => '<i class="fa fa-angle-double-right"></i>',
-                        'badge' => Users::find()->count(),
-                        'badgeBgClass' => 'label-success',
-                    ],
-                    ['label' => Yii::t('backend', 'customers_last_month'),
-                        'url' => ['/admin/last_month/'],
-                        'icon' => '<i class="fa fa-angle-double-right"></i>',
-                        'badge' => Users::find()->where(['>', 'date_reg', date('Y-m-d H:i:s', strtotime('first day of this month'))])->count(),
-                        'badgeBgClass' => 'label-success',
-                    ],
-
-                ]
+                'badge' => Users::find()->count(),
+                'badgeBgClass' => 'label-success',
             ],
+            [
+                'label' => Yii::t('backend', 'Emails'),
+                'icon' => '<i class="fa fa-envelope-o "></i>',
+                'url' => ['/users/emails'],
+                'visible' => Yii::$app->user->can('administrator'),
+                'badge' => Users::find()->where(['<>', 'email', ''])->count(),
+                'badgeBgClass' => 'label-success',
+            ],
+            [
+                'label' => Yii::t('backend', 'Новых за месяц'),
+                'icon' => '<i class="fa fa-calendar"></i>',
+                'url' => ['/users/last-month/'],
+                'visible' => Yii::$app->user->can('administrator'),
+                'badge' => Users::find()->where(['>', 'date_reg', date('Y-m-d H:i:s', strtotime('first day of this month'))])->count(),
+                'badgeBgClass' => 'label-success',
+            ],
+
+            [
+                'label' => Yii::t('backend', 'Заказы'),
+                'options' => ['class' => 'header']
+            ],
+            [
+                'label' => Yii::t('backend', 'Заказы за этот месяц'),
+                'icon' => '<i class="fa fa-first-order"></i>',
+                'url' => ['/order/this-month'],
+                'visible' => Yii::$app->user->can('administrator'),
+                'badge' => OrderController::getCntOrdersThisMonth(),
+                'badgeBgClass' => 'label-success',
+            ],
+            [
+                'label' => Yii::t('backend', 'Все Заказы'),
+                'icon' => '<i class="fa fa-plus-square-o"></i>',
+                'url' => ['/order/allorders'],
+                'visible' => Yii::$app->user->can('administrator'),
+                'badge' => OrderController::getCntAllOrders(),
+                'badgeBgClass' => 'label-success',
+            ],
+
             [
                 'label' => Yii::t('backend', 'Main'),
                 'options' => ['class' => 'header']
@@ -255,19 +275,15 @@
      <?php endif; ?>
     </h1>
 
-    <?php echo Breadcrumbs::widget([
-        'tag' => 'ol',
-        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-    ]) ?>
+    <?php echo Breadcrumbs::widget(['tag' => 'ol',
+        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],]) ?>
    </section>
 
    <!-- Main content -->
    <section class="content">
     <?php if (Yii::$app->session->hasFlash('alert')): ?>
-     <?php echo \yii\bootstrap\Alert::widget([
-         'body' => ArrayHelper::getValue(Yii::$app->session->getFlash('alert'), 'body'),
-         'options' => ArrayHelper::getValue(Yii::$app->session->getFlash('alert'), 'options'),
-     ]) ?>
+     <?php echo \yii\bootstrap\Alert::widget(['body' => ArrayHelper::getValue(Yii::$app->session->getFlash('alert'), 'body'),
+         'options' => ArrayHelper::getValue(Yii::$app->session->getFlash('alert'), 'options'),]) ?>
     <?php endif; ?>
     <?php echo $content ?>
    </section><!-- /.content -->

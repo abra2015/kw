@@ -213,3 +213,105 @@
 [Wed Oct 12 15:53:53.698466 2016] [:error] [pid 17273] [client 185.77.102.78:4608] PHP Fatal error:  Class 'backend\\controllers\\User' not found in /home/gennadii/karabasweb.com/backend/controllers/UsersController.php on line 170, referer: http://karabasweb.com/admin/users
 [Wed Oct 12 15:54:02.999660 2016] [:error] [pid 16757] [client 185.77.102.78:4615] PHP Fatal error:  Class 'backend\\controllers\\User' not found in /home/gennadii/karabasweb.com/backend/controllers/UsersController.php on line 170, referer: http://karabasweb.com/admin/users
 [Wed Oct 12 22:54:18.999820 2016] [:error] [pid 16260] [client 185.77.102.78:4644] PHP Fatal error:  Class 'backend\\controllers\\User' not found in /home/gennadii/karabasweb.com/backend/controllers/UsersController.php on line 170
+[Wed Oct 12 23:24:24.307721 2016] [:error] [pid 16225] [client 185.77.102.78:7435] PHP Fatal error:  Class 'trntv\\yii\\datetimepicker\\DatetimepickerWidget' not found in /home/gennadii/karabasweb.com/vendor/yiisoft/yii2/widgets/ActiveField.php on line 678, referer: http://karabasweb.com/admin/users
+[Wed Oct 12 16:24:28.910732 2016] [:error] [pid 17457] [client 185.77.102.78:7440] PHP Fatal error:  Class 'trntv\\yii\\datetimepicker\\DatetimepickerWidget' not found in /home/gennadii/karabasweb.com/vendor/yiisoft/yii2/widgets/ActiveField.php on line 678, referer: http://karabasweb.com/admin/users
+[Wed Oct 12 23:24:36.983561 2016] [:error] [pid 16673] [client 185.77.102.78:7451] PHP Fatal error:  Class 'trntv\\yii\\datetimepicker\\DatetimepickerWidget' not found in /home/gennadii/karabasweb.com/vendor/yiisoft/yii2/widgets/ActiveField.php on line 678
+[Wed Oct 12 23:36:02.403499 2016] [:error] [pid 14707] [client 185.77.102.78:8757] PHP Parse error:  syntax error, unexpected ']' in /home/gennadii/karabasweb.com/backend/views/users/_add_order.php on line 81, referer: http://karabasweb.com/admin/users
+[Thu Oct 13 00:01:46.019021 2016] [authz_core:error] [pid 14707] [client 187.104.155.194:36160] AH01630: client denied by server configuration: /var/www/html/command.php
+[Thu Oct 13 05:19:55.088502 2016] [authz_core:error] [pid 17157] [client 66.240.236.119:53786] AH01630: client denied by server configuration: /var/www/html/
+[Wed Oct 12 22:19:57.322744 2016] [authz_core:error] [pid 19296] [client 66.240.236.119:54593] AH01630: client denied by server configuration: /var/www/html/robots.txt
+[Thu Oct 13 05:19:59.835746 2016] [authz_core:error] [pid 16673] [client 66.240.236.119:55945] AH01630: client denied by server configuration: /var/www/html/sitemap.xml
+[Thu Oct 13 07:11:15.433208 2016] [authz_core:error] [pid 17170] [client 183.129.160.229:49962] AH01630: client denied by server configuration: /var/www/html/
+[Thu Oct 13 07:11:15.432996 2016] [authz_core:error] [pid 16260] [client 183.129.160.229:49963] AH01630: client denied by server configuration: /var/www/html/
+[Thu Oct 13 05:04:51.057998 2016] [authz_core:error] [pid 16852] [client 183.98.42.139:47520] AH01630: client denied by server configuration: /var/www/html/
+[Thu Oct 13 17:32:44.622387 2016] [authz_core:error] [pid 16260] [client 54.78.133.9:44716] AH01630: client denied by server configuration: /var/www/html/
+[Thu Oct 13 21:42:00.359950 2016] [authz_core:error] [pid 17157] [client 185.77.102.78:11287] AH01630: client denied by server configuration: /var/www/html/admin, referer: http://karabasweb.com/
+[Fri Oct 14 00:48:08.475983 2016] [authz_core:error] [pid 19340] [client 113.204.53.134:49451] AH01630: client denied by server configuration: /var/www/html/jmx-console, referer: http://159.203.34.202/jmx-console/HtmlAdaptor?action=inspectMBean&name=jboss.system:type=ServerInfo
+[Fri Oct 14 00:48:13.121881 2016] [authz_core:error] [pid 19340] [client 113.204.53.134:49451] AH01630: client denied by server configuration: /var/www/html/invoker, referer: 159.203.34.202/invoker/JMXInvokerServlet
+[Fri Oct 14 01:01:32.050713 2016] [authz_core:error] [pid 18093] [client 61.186.245.211:64822] AH01630: client denied by server configuration: /var/www/html/web-console, referer: 159.203.34.202/web-console/ServerInfo.jsp
+[Fri Oct 14 01:01:49.099359 2016] [authz_core:error] [pid 17157] [client 61.186.245.211:62345] AH01630: client denied by server configuration: /var/www/html/jmx-console, referer: http://159.203.34.202/jmx-console/HtmlAdaptor?action=inspectMBean&name=jboss.system:type=ServerInfo
+[Thu Oct 13 18:58:54.222177 2016] [authz_core:error] [pid 19296] [client 113.204.53.134:54401] AH01630: client denied by server configuration: /var/www/html/jmx-console, referer: http://159.203.34.202/jmx-console/HtmlAdaptor?action=inspectMBean&name=jboss.system:type=ServerInfo
+[Thu Oct 13 18:59:23.140772 2016] [authz_core:error] [pid 16852] [client 113.204.53.134:51878] AH01630: client denied by server configuration: /var/www/html/invoker, referer: 159.203.34.202/invoker/JMXInvokerServlet
+[Thu Oct 13 23:11:31.858250 2016] [authz_core:error] [pid 8573] [client 93.174.93.210:60000] AH01630: client denied by server configuration: /var/www/html/
+[Fri Oct 14 00:58:09.111652 2016] [authz_core:error] [pid 892] [client 192.187.118.67:34055] AH01630: client denied by server configuration: /var/www/html/
+[Fri Oct 14 12:04:28.963670 2016] [authz_core:error] [pid 9462] [client 192.187.118.66:37259] AH01630: client denied by server configuration: /var/www/html/
+[Fri Oct 14 12:50:57.135676 2016] [authz_core:error] [pid 17170] [client 93.158.200.68:40594] AH01630: client denied by server configuration: /var/www/html/muieblackcat
+[Fri Oct 14 12:50:57.317877 2016] [authz_core:error] [pid 19296] [client 93.158.200.68:41216] AH01630: client denied by server configuration: /var/www/html/pma
+[Fri Oct 14 12:50:57.498073 2016] [authz_core:error] [pid 9462] [client 93.158.200.68:41734] AH01630: client denied by server configuration: /var/www/html/mysql
+[Fri Oct 14 12:50:57.677994 2016] [authz_core:error] [pid 9463] [client 93.158.200.68:42178] AH01630: client denied by server configuration: /var/www/html/mysqladmin
+[Fri Oct 14 12:50:57.883455 2016] [authz_core:error] [pid 9464] [client 93.158.200.68:42716] AH01630: client denied by server configuration: /var/www/html/MyAdmin
+[Fri Oct 14 12:50:58.064492 2016] [authz_core:error] [pid 8573] [client 93.158.200.68:43200] AH01630: client denied by server configuration: /var/www/html/myadmin
+[Fri Oct 14 12:50:58.292406 2016] [authz_core:error] [pid 17457] [client 93.158.200.68:43722] AH01630: client denied by server configuration: /var/www/html/phpMyAdmin
+[Fri Oct 14 12:50:58.474768 2016] [authz_core:error] [pid 16852] [client 93.158.200.68:44022] AH01630: client denied by server configuration: /var/www/html/phpmyadmin
+[Fri Oct 14 07:57:33.834425 2016] [authz_core:error] [pid 11820] [client 186.222.249.253:46587] AH01630: client denied by server configuration: /var/www/html/cgi
+[Fri Oct 14 14:57:34.262730 2016] [authz_core:error] [pid 17170] [client 186.222.249.253:46592] AH01630: client denied by server configuration: /var/www/html/stssys.htm
+[Fri Oct 14 14:57:34.676343 2016] [authz_core:error] [pid 9462] [client 186.222.249.253:46597] AH01630: client denied by server configuration: /var/www/html/
+[Fri Oct 14 14:57:35.215487 2016] [authz_core:error] [pid 9464] [client 186.222.249.253:46601] AH01630: client denied by server configuration: /var/www/html/command.php
+[Fri Oct 14 19:41:06.750592 2016] [authz_core:error] [pid 8573] [client 82.223.16.18:52901] AH01630: client denied by server configuration: /var/www/html/
+[Fri Oct 14 19:41:10.050851 2016] [authz_core:error] [pid 17457] [client 82.223.16.18:53201] AH01630: client denied by server configuration: /var/www/html/script
+[Fri Oct 14 19:41:13.366170 2016] [authz_core:error] [pid 16852] [client 82.223.16.18:53531] AH01630: client denied by server configuration: /var/www/html/jenkins
+[Fri Oct 14 19:41:16.672384 2016] [authz_core:error] [pid 17157] [client 82.223.16.18:53852] AH01630: client denied by server configuration: /var/www/html/login
+[Fri Oct 14 12:41:16.969096 2016] [authz_core:error] [pid 11820] [client 82.223.16.18:54154] AH01630: client denied by server configuration: /var/www/html/jmx-console
+[Fri Oct 14 19:41:20.271145 2016] [authz_core:error] [pid 17170] [client 82.223.16.18:54347] AH01630: client denied by server configuration: /var/www/html/
+[Fri Oct 14 19:41:23.581734 2016] [authz_core:error] [pid 9462] [client 82.223.16.18:54682] AH01630: client denied by server configuration: /var/www/html/
+[Fri Oct 14 19:41:26.876664 2016] [authz_core:error] [pid 9464] [client 82.223.16.18:54992] AH01630: client denied by server configuration: /var/www/html/manager
+[Fri Oct 14 19:41:30.179608 2016] [authz_core:error] [pid 9463] [client 82.223.16.18:55305] AH01630: client denied by server configuration: /var/www/html/
+[Fri Oct 14 19:41:33.474877 2016] [authz_core:error] [pid 19296] [client 82.223.16.18:55641] AH01630: client denied by server configuration: /var/www/html/
+[Fri Oct 14 19:41:36.764013 2016] [authz_core:error] [pid 8573] [client 82.223.16.18:55927] AH01630: client denied by server configuration: /var/www/html/msd
+[Fri Oct 14 19:41:40.053617 2016] [authz_core:error] [pid 17457] [client 82.223.16.18:56227] AH01630: client denied by server configuration: /var/www/html/mySqlDumper
+[Fri Oct 14 19:41:40.343341 2016] [authz_core:error] [pid 16852] [client 82.223.16.18:56563] AH01630: client denied by server configuration: /var/www/html/msd1.24stable
+[Fri Oct 14 19:41:43.638991 2016] [authz_core:error] [pid 17157] [client 82.223.16.18:56752] AH01630: client denied by server configuration: /var/www/html/msd1.24.4
+[Fri Oct 14 12:41:46.932619 2016] [authz_core:error] [pid 11820] [client 82.223.16.18:57052] AH01630: client denied by server configuration: /var/www/html/mysqldumper
+[Fri Oct 14 19:41:50.239618 2016] [authz_core:error] [pid 17170] [client 82.223.16.18:57357] AH01630: client denied by server configuration: /var/www/html/MySQLDumper
+[Fri Oct 14 19:41:53.562430 2016] [authz_core:error] [pid 9462] [client 82.223.16.18:57687] AH01630: client denied by server configuration: /var/www/html/mysql
+[Fri Oct 14 19:41:57.286699 2016] [authz_core:error] [pid 9464] [client 82.223.16.18:58027] AH01630: client denied by server configuration: /var/www/html/sql
+[Fri Oct 14 19:43:00.652906 2016] [authz_core:error] [pid 9463] [client 82.223.16.18:36436] AH01630: client denied by server configuration: /var/www/html/SQlite
+[Fri Oct 14 19:43:03.961603 2016] [authz_core:error] [pid 19296] [client 82.223.16.18:36752] AH01630: client denied by server configuration: /var/www/html/SQLiteManager
+[Fri Oct 14 22:34:43.982880 2016] [authz_core:error] [pid 17457] [client 92.255.232.87:40078] AH01630: client denied by server configuration: /var/www/html/
+[Sat Oct 15 02:13:47.184296 2016] [authz_core:error] [pid 16852] [client 60.168.97.123:57239] AH01630: client denied by server configuration: /var/www/html/manager
+[Sat Oct 15 04:23:21.523198 2016] [authz_core:error] [pid 17157] [client 185.100.87.191:34354] AH01630: client denied by server configuration: /var/www/html/
+[Fri Oct 14 21:25:30.908309 2016] [authz_core:error] [pid 11820] [client 185.100.87.191:57801] AH01630: client denied by server configuration: /var/www/html/
+[Sat Oct 15 04:25:31.343449 2016] [authz_core:error] [pid 17170] [client 185.100.87.191:58265] AH01630: client denied by server configuration: /var/www/html/
+[Sat Oct 15 04:30:18.835847 2016] [authz_core:error] [pid 9462] [client 208.100.26.232:58980] AH01630: client denied by server configuration: /var/www/html/
+[Sat Oct 15 04:33:42.718054 2016] [authz_core:error] [pid 9464] [client 208.100.26.232:44716] AH01630: client denied by server configuration: /var/www/html/
+[Sat Oct 15 04:33:48.048492 2016] [authz_core:error] [pid 9463] [client 208.100.26.232:49870] AH01630: client denied by server configuration: /var/www/html/
+[Sat Oct 15 07:10:28.638176 2016] [authz_core:error] [pid 8573] [client 212.92.127.172:56306] AH01630: client denied by server configuration: /var/www/html/
+[Sat Oct 15 13:33:23.735034 2016] [authz_core:error] [pid 19296] [client 141.212.122.48:52793] AH01630: client denied by server configuration: /var/www/html/
+[Sun Oct 16 02:19:29.343013 2016] [authz_core:error] [pid 19296] [client 183.129.160.229:35921] AH01630: client denied by server configuration: /var/www/html/
+[Sun Oct 16 02:19:29.355936 2016] [authz_core:error] [pid 9463] [client 183.129.160.229:35922] AH01630: client denied by server configuration: /var/www/html/
+[Sun Oct 16 03:24:58.160234 2016] [authz_core:error] [pid 32069] [client 141.8.143.183:58907] AH01630: client denied by server configuration: /var/www/html/robots.txt
+[Sun Oct 16 07:57:43.646549 2016] [authz_core:error] [pid 32069] [client 195.154.214.162:41078] AH01630: client denied by server configuration: /var/www/html/admin
+[Sun Oct 16 10:07:12.094097 2016] [authz_core:error] [pid 32069] [client 89.248.174.4:54382] AH01630: client denied by server configuration: /var/www/html/xmlrpc.php
+[Sun Oct 16 10:57:40.388353 2016] [:error] [pid 19296] [client 185.77.102.78:25268] PHP Parse error:  syntax error, unexpected '}' in /home/gennadii/karabasweb.com/backend/controllers/OrderController.php on line 48, referer: http://karabasweb.com/admin/users/?UsersSearch%5Bname%5D=0108+%D0%A2%D0%B0%D1%82%D1%8C%D1%8F%D0%BD%D0%B0+%D0%97%D0%B0%D0%BF%D0%BE%D1%80%D0%BE%D0%B6%D1%8C%D0%B5&UsersSearch%5Bphone%5D=&UsersSearch%5Bemail%5D=&UsersSearch%5Badress%5D=&UsersSearch%5Bcatalog%5D=
+[Sun Oct 16 11:33:02.784258 2016] [:error] [pid 16852] [client 185.77.102.78:25464] PHP Parse error:  syntax error, unexpected '(' in /home/gennadii/karabasweb.com/backend/controllers/OrderController.php on line 48
+[Sun Oct 16 11:50:54.814109 2016] [authz_core:error] [pid 19296] [client 191.180.101.208:42105] AH01630: client denied by server configuration: /var/www/html/cgi
+[Sun Oct 16 11:50:55.181831 2016] [authz_core:error] [pid 16852] [client 191.180.101.208:42112] AH01630: client denied by server configuration: /var/www/html/stssys.htm
+[Sun Oct 16 11:50:55.552018 2016] [authz_core:error] [pid 11820] [client 191.180.101.208:42118] AH01630: client denied by server configuration: /var/www/html/
+[Sun Oct 16 04:50:56.022460 2016] [authz_core:error] [pid 29521] [client 191.180.101.208:42123] AH01630: client denied by server configuration: /var/www/html/command.php
+[Sun Oct 16 11:50:56.427510 2016] [authz_core:error] [pid 9463] [client 191.180.101.208:42128] AH01630: client denied by server configuration: /var/www/html/language
+[Sun Oct 16 05:19:37.417985 2016] [:error] [pid 29739] [client 185.77.102.78:25975] PHP Fatal error:  Class 'backend\\controllers\\ActiveDataProvider' not found in /home/gennadii/karabasweb.com/backend/controllers/OrderController.php on line 47
+[Sun Oct 16 12:20:57.204599 2016] [:error] [pid 8573] [client 185.77.102.78:26003] PHP Fatal error:  Class 'backend\\controllers\\ActiveDataProvider' not found in /home/gennadii/karabasweb.com/backend/controllers/OrderController.php on line 48
+[Sun Oct 16 05:20:59.581719 2016] [:error] [pid 29559] [client 185.77.102.78:26008] PHP Fatal error:  Class 'backend\\controllers\\ActiveDataProvider' not found in /home/gennadii/karabasweb.com/backend/controllers/OrderController.php on line 48
+[Sun Oct 16 12:21:01.667003 2016] [:error] [pid 11820] [client 185.77.102.78:26004] PHP Fatal error:  Class 'backend\\controllers\\ActiveDataProvider' not found in /home/gennadii/karabasweb.com/backend/controllers/OrderController.php on line 48
+[Sun Oct 16 12:21:02.726789 2016] [:error] [pid 28870] [client 185.77.102.78:26007] PHP Fatal error:  Class 'backend\\controllers\\ActiveDataProvider' not found in /home/gennadii/karabasweb.com/backend/controllers/OrderController.php on line 48
+[Sun Oct 16 12:28:24.627758 2016] [:error] [pid 8573] [client 185.77.102.78:26073] PHP Fatal error:  Class 'common\\widget\\AllOrdersWidget' not found in /home/gennadii/karabasweb.com/backend/views/order/allorders.php on line 4
+[Sun Oct 16 12:28:59.465714 2016] [:error] [pid 29559] [client 185.77.102.78:26084] PHP Fatal error:  Class 'AllOrdersWidget' not found in /home/gennadii/karabasweb.com/backend/views/order/allorders.php on line 4
+[Sun Oct 16 05:29:45.507729 2016] [:error] [pid 29602] [client 185.77.102.78:26092] PHP Fatal error:  Class 'AllOrdersWidget' not found in /home/gennadii/karabasweb.com/backend/views/order/allorders.php on line 4
+[Sun Oct 16 05:33:17.093403 2016] [:error] [pid 31271] [client 185.77.102.78:26124] PHP Fatal error:  Class 'common\\widgets\\GridView' not found in /home/gennadii/karabasweb.com/common/widgets/AllOrdersWidget.php on line 24
+[Sun Oct 16 12:34:16.814411 2016] [:error] [pid 30857] [client 185.77.102.78:26132] PHP Fatal error:  Class 'common\\widgets\\GridView' not found in /home/gennadii/karabasweb.com/common/widgets/AllOrdersWidget.php on line 24
+[Sun Oct 16 05:34:18.125688 2016] [:error] [pid 30892] [client 185.77.102.78:26130] PHP Fatal error:  Class 'common\\widgets\\GridView' not found in /home/gennadii/karabasweb.com/common/widgets/AllOrdersWidget.php on line 24
+[Sun Oct 16 05:34:41.360424 2016] [:error] [pid 31360] [client 185.77.102.78:26146] PHP Fatal error:  Class 'common\\widgets\\GridView' not found in /home/gennadii/karabasweb.com/common/widgets/AllOrdersWidget.php on line 24
+[Sun Oct 16 05:34:42.618069 2016] [:error] [pid 30938] [client 185.77.102.78:26143] PHP Fatal error:  Class 'common\\widgets\\GridView' not found in /home/gennadii/karabasweb.com/common/widgets/AllOrdersWidget.php on line 24
+[Sun Oct 16 12:34:43.602417 2016] [:error] [pid 8573] [client 185.77.102.78:26145] PHP Fatal error:  Class 'common\\widgets\\GridView' not found in /home/gennadii/karabasweb.com/common/widgets/AllOrdersWidget.php on line 24
+[Sun Oct 16 14:39:49.995256 2016] [:error] [pid 3855] [client 185.77.102.78:27507] PHP Parse error:  syntax error, unexpected ']' in /home/gennadii/karabasweb.com/backend/views/users/index.php on line 144, referer: http://karabasweb.com/admin/order/allorders?id=38&page=4
+[Sun Oct 16 08:18:31.948188 2016] [:error] [pid 5691] [client 185.77.102.78:28322] PHP Parse error:  syntax error, unexpected '=' in /home/gennadii/karabasweb.com/backend/views/users/test.php on line 1
+[Sun Oct 16 15:27:11.591560 2016] [:error] [pid 32310] [client 185.77.102.78:28417] PHP Fatal error:  Class 'Orders' not found in /home/gennadii/karabasweb.com/backend/views/layouts/common.php on line 182, referer: http://karabasweb.com/admin/users/
+[Sun Oct 16 15:27:13.282699 2016] [:error] [pid 3308] [client 185.77.102.78:28421] PHP Fatal error:  Class 'Orders' not found in /home/gennadii/karabasweb.com/backend/views/layouts/common.php on line 182, referer: http://karabasweb.com/admin/users/update?id=1146
+[Sun Oct 16 08:48:23.449650 2016] [:error] [pid 6306] [client 185.77.102.78:28595] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/gennadii/karabasweb.com/backend/views/order/allorders.php on line 7
+[Sun Oct 16 22:10:43.065895 2016] [:error] [pid 19466] [client 185.77.102.78:34416] PHP Parse error:  syntax error, unexpected ']' in /home/gennadii/karabasweb.com/backend/views/layouts/common.php on line 275
+[Sun Oct 16 22:21:09.595775 2016] [:error] [pid 17588] [client 185.77.102.78:36981] PHP Parse error:  syntax error, unexpected ']' in /home/gennadii/karabasweb.com/backend/views/layouts/common.php on line 270
+[Sun Oct 16 15:58:41.974699 2016] [:error] [pid 25317] [client 185.77.102.78:43769] PHP Fatal error:  Can't use method return value in write context in /home/gennadii/karabasweb.com/backend/controllers/OrderController.php on line 89, referer: http://karabasweb.com/admin/order/this-month?page=2
+[Sun Oct 16 23:04:10.988266 2016] [authz_core:error] [pid 25312] [client 139.162.13.205:60082] AH01630: client denied by server configuration: /var/www/html/
+[Mon Oct 17 10:05:19.346415 2016] [authz_core:error] [pid 27141] [client 128.197.41.97:45686] AH01630: client denied by server configuration: /var/www/html/
+[Mon Oct 17 10:38:48.395523 2016] [authz_core:error] [pid 27312] [client 183.129.160.229:59271] AH01630: client denied by server configuration: /var/www/html/
+[Mon Oct 17 10:38:48.431066 2016] [authz_core:error] [pid 27141] [client 183.129.160.229:59272] AH01630: client denied by server configuration: /var/www/html/

@@ -8,6 +8,8 @@
  use yii\web\Controller;
  use yii\web\NotFoundHttpException;
  use yii\filters\VerbFilter;
+ use yii\data\ActiveDataProvider;
+ use yii\helpers\Url;
 
  /**
   * OrderController implements the CRUD actions for Order model.
@@ -41,6 +43,81 @@
     ]);
    }
 
+
+  private function Query()
+   {
+
+    $query = (new \yii\db\Query())
+        ->select(["FROM_UNIXTIME(date, '%d.%m.%Y') as ud", "U.name", "GROUP_CONCAT('||',O.count, \"x \", O.price, \" = \", O.count*O.price, '   ', P.product) as orders",
+            "SUM(O.count*O.price) as ord_sum",
+            "SUM(O.count) as cnt_pos",
+            "count(*) as dif_pos"])
+        ->from("orders O")
+        ->join('JOIN', 'users U', 'U.id = O.customer_id')
+        ->join('JOIN', 'product P', 'O.product_id = P.id');
+
+    if ($id = Yii::$app->request->get('id'))
+     $query->where(['O.customer_id' => $id]);
+
+    if (($from = Yii::$app->request->get('from')))
+     $query->andWhere(['>=', 'O.date', strtotime($from)]);
+
+
+    $query->groupBy(['ud', 'O.customer_id'])
+        ->orderBy('O.date DESC');
+
+
+    return $query;
+
+
+   }
+
+
+  public function actionAllorders()
+   {
+    $dataProvider = new ActiveDataProvider([
+        'query' => $this->Query(),
+    ]);
+
+    $Oborot = (new \yii\db\Query())->select('SUM(O.count*O.price) as oborot')->from("orders O")->all();
+
+    return $this->render('allorders', ['data' => $dataProvider,
+        'oborot' => $Oborot[0]['oborot']
+    ]);
+
+   }
+
+  public function actionThisMonth()
+   {
+    $_GET['from'] = date('Y-m-d H:i:s', (strtotime('first day of this month') - 18 * 3600));
+    $Oborot = (new \yii\db\Query())
+        ->select('SUM(O.count*O.price) as oborot')
+        ->from("orders O")
+        ->where(['>=', 'O.date', (strtotime('first day of this month') - 18 * 3600)])
+        ->all();
+    $dataProvider = new ActiveDataProvider([
+        'query' => $this->Query(),
+
+    ]);
+
+    return $this->render('allorders', ['data' => $dataProvider, 'oborot' => $Oborot[0]['oborot']]);
+
+   }
+
+  public static function getCntAllOrders()
+   {
+    return self::Query()->count();
+   }
+
+  public static function getCntOrdersThisMonth()
+   {
+    $_GET['from'] = date('Y-m-d H:i:s', (strtotime('first day of this month') - 18 * 3600));
+    $cnt = self::Query()->count();
+    $_GET['from'] = '';
+    return $cnt;
+   }
+
+
   /**
    * Displays a single Order model.
    * @param integer $id
@@ -61,23 +138,24 @@
   public function actionCreate()
    {
     $this->enableCsrfValidation = false;
-    print_r(Yii::$app->request->post());
+    //print_r(Yii::$app->request->post());
     $Order = Yii::$app->request->post();
-    $order_date = strtotime('now');
-    $order_id = Order::find()->select('id')->max('id') + 1;
-    for ($i=0; $i<count($Order['Order']['customer_id']); $i++)
+    $order_id = Order::find()->select('order_id')->max('order_id') + 1;
+    for ($i = 0; $i < count($Order['Order']['customer_id']); $i++)
      {
       $model = new Order();
       $model->product_id = $Order['Order']['product_id'][$i];
-      $model->date = $order_date;
+      $model->date = strtotime(str_replace('/', '-', $Order['Order']['date'][$i])) + 4 * 3600;
       $model->order_id = $order_id;
       $model->customer_id = $Order['Order']['customer_id'][$i];
       $model->count = $Order['Order']['count'][$i];
       $model->price = $Order['Order']['price'][$i];
-      $model->save();
+      if ($model->save())
+       \Yii::$app->session->setFlash('add_user', "Заказ пользователя <b>$model->customer_id</b> успешно добавлен");
 
      }
-    return $this->redirect('/admin/users');
+
+    return $this->redirect(Url::previous());
 
 
     if ($model->load(Yii::$app->request->post()) && $model->save())

@@ -16,19 +16,22 @@
 
  .form-group {
   margin-bottom: 4px !important;
+
+ div.users-form {
+  height: 500px;
+ }
+
+ }
 </style>
-<div class="users-form" style="height: 700px;">
+<div class="users-form">
 
 
  <?php
 
   $form = ActiveForm::begin(['action' => $model->isNewRecord ? '/admin/order/create' : '/admin/order/update?id=' . $user, 'method' => 'POST']); ?>
  <div class="row">
-  <div class="col-md-1">
-   <label class="control-label" for="order-count">Id</label>
-  </div>
-  <div class="col-md-6">
-   <label class="control-label" for="order-count">Товар</label>
+  <div class="col-md-5">
+   <label class="control-label" for="order-count">Продукт</label>
   </div>
   <div class="col-md-2">
    <label class="control-label" for="order-count">Кол-во</label>
@@ -36,16 +39,19 @@
   <div class="col-md-2">
    <label class="control-label" for="order-count">Цена</label>
   </div>
+  <div class="col-md-2">
+   <label class="control-label" for="order-count">Дата</label>
+  </div>
+
   <div class="col-md-1">
    <label class="control-label" for="order-count">Add</label>
   </div>
+
  </div>
 
  <div class="row dublicate">
-  <div class="col-md-1">
-   <?= $form->field($model, 'customer_id[]')->textInput(['maxlength' => true, 'value' => $user])->label(false) ?>
-  </div>
-  <div class="col-md-6">
+  <?= $form->field($model, 'customer_id[]')->hiddenInput(['maxlength' => true, 'value' => $user])->label(false) ?>
+  <div class="col-md-5">
    <?= $form->field($model, 'product_id[]')->dropDownList(ArrayHelper::map(Product::find()->select(['id', 'product', 'id_category', 'size'])->orderBy('product')->all(), 'id', function ($model)
     {
      return $model->product . ' ' . $model->size;
@@ -55,10 +61,13 @@
     }))->label(false) ?>
   </div>
   <div class="col-md-2">
-   <?= $form->field($model, 'count[]')->dropDownList(range(1, 12))->label(false); ?>
+   <?= $form->field($model, 'count[]')->dropDownList([1 => 1, 2 => 2, 3 => 3, 4 => 4, 5 => 5, 6 => 6, 7 => 7, 8 => 8, 9 => 9, 10 => 10])->label(false); ?>
   </div>
   <div class="col-md-2">
    <?= $form->field($model, 'price[]')->textInput(['maxlength' => true])->label(false) ?>
+  </div>
+  <div class="col-md-2">
+   <?= $form->field($model, 'date[]')->textInput(['maxlength' => true, 'value' => date("d/m/Y")])->label(false) ?>
   </div>
   <div class="col-md-1">
    <button type="button" class="btn btn-primary btn-sm inp-add">add</button>
@@ -67,7 +76,7 @@
 
  <div class="sbm row">
   <div class="col-md-12">
-   <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+   <?= Html::submitButton($model->isNewRecord ? 'Добавить' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
   </div>
  </div>
 

@@ -13,6 +13,8 @@
  use yii\web\NotFoundHttpException;
  use yii\filters\VerbFilter;
  use yii\filters\AccessControl;
+ use yii\helpers\Url;
+ use yii\helpers\ArrayHelper;
 
  /**
   * UsersController implements the CRUD actions for Users model.
@@ -30,14 +32,13 @@
     $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
     $dataProvider->sort = ['defaultOrder' => ['name' => SORT_ASC]];
     $dataProvider->pagination = ['pageSize' => 20];
-    $lastUser = Users::find()->orderBy('id DESC')->limit(1)->all();
 
-
+    Url::remember();
     return $this->render('index', [
         'searchModel' => $searchModel,
         'dataProvider' => $dataProvider,
         'model' => new Users(),
-        'lastUser' => $lastUser
+        'sortBy' => ArrayHelper::map(Users::find()->select(['id', 'name'])->orderBy('name')->all(), 'name', 'name'),
     ]);
    }
 
@@ -82,6 +83,24 @@
       ]);
      }
    }
+
+  public function actionLastMonth()
+   {
+    $searchModel = new UsersSearch();
+    $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+    $dataProvider->sort = ['defaultOrder' => ['name' => SORT_ASC]];
+    $dataProvider->query->andWhere(['>', 'date_reg', date('Y-m-d H:i:s', strtotime('first day of this month'))]);
+    $dataProvider->pagination = ['pageSize' => 20];
+    Url::remember();
+    return $this->render('index', [
+        'searchModel' => $searchModel,
+        'dataProvider' => $dataProvider,
+        'model' => new Users(),
+        'sortBy' => ArrayHelper::map(Users::find()->select(['id', 'name'])->where(['>', 'date_reg', date('Y-m-d H:i:s', strtotime('first day of this month'))])->orderBy('name')->all(), 'name', 'name'),
+    ]);
+
+   }
+
 
   /*
    * метод кодирования в джсон телефонов которые приходят из инпутов
@@ -136,7 +155,7 @@
       $model->save();
       \Yii::$app->session->setFlash('add_user', "Покупатель <b>$model->name</b> успешно обновлен");
 //       return $this->redirect(['view', 'id' => $model->id]);
-      return $this->redirect('/admin/users/');
+      return $this->redirect(Url::previous());
 
      } else
      {
@@ -165,6 +184,8 @@
   public function actionOrder($id)
    {
     $this->layout = false;
+
+
     return $this->render('_add_order', [
         'model' => new Order(),
         'user' => $id
@@ -236,6 +257,8 @@
 
   protected function subscribeUser($model)
    {
+
+
     define('MAILGUN_API_URL_LIST', 'https://api.mailgun.net/v3/lists/');
     define('MAILGUN_MAILING_LIST', 'clients@karabasweb.com/');
     define('MAILGUN_API_KEY', 'key-776c8697010e7e9435fcf00b30a796c6');
@@ -244,29 +267,32 @@
 
     if ($model->email)
      {
-      $curl = curl_init();
-      curl_setopt_array($curl, array(
-          CURLOPT_RETURNTRANSFER => 1,
-          CURLOPT_URL => MAILGUN_API_URL_LIST . MAILGUN_MAILING_LIST . 'members',
-          CURLOPT_USERPWD => "api:" . MAILGUN_API_KEY,
-          CURLOPT_POST => 1,
-          CURLOPT_POSTFIELDS => array(
-              'address' => $model->email,
-              'subscribed' => true
-          )));
-      $resp = curl_exec($curl);
-      curl_close($curl);
+      file_put_contents('/home/gennadii/karabasweb.com/logs/all_emails.log', $model->email . PHP_EOL, FILE_APPEND);
 
-      $res = json_decode($resp, 1);
-      if ($res['message'] == 'Mailing list member has been created' || $res['message'] == "Address already exists '" . $model->email . "'")
-       {
-        $data = date('Y.m.d H:i:s') . ': ' . $model->email . ' was Subscribed into List Customer: ' . $model->id . PHP_EOL;
-        file_put_contents('/home/gennadii/karabasweb.com/logs/user_subscribed.log', $data, FILE_APPEND);
-       } else
-       {
-        $data = date('Y.m.d H:i:s') . ': can not send POST REQUEST into MailGun Subscribed List' . PHP_EOL . json_encode($res) . " " . $model->email;
-        file_put_contents('/home/gennadii/karabasweb.com/logs/user_subscribed.log', $data, FILE_APPEND);
-       }
+//
+//      $curl = curl_init();
+//      curl_setopt_array($curl, array(
+//          CURLOPT_RETURNTRANSFER => 1,
+//          CURLOPT_URL => MAILGUN_API_URL_LIST . MAILGUN_MAILING_LIST . 'members',
+//          CURLOPT_USERPWD => "api:" . MAILGUN_API_KEY,
+//          CURLOPT_POST => 1,
+//          CURLOPT_POSTFIELDS => array(
+//              'address' => $model->email,
+//              'subscribed' => true
+//          )));
+//      $resp = curl_exec($curl);
+//      curl_close($curl);
+//
+//      $res = json_decode($resp, 1);
+//      if ($res['message'] == 'Mailing list member has been created' || $res['message'] == "Address already exists '" . $model->email . "'")
+//       {
+//        $data = date('Y.m.d H:i:s') . ': ' . $model->email . ' was Subscribed into List Customer: ' . $model->id . PHP_EOL;
+//        file_put_contents('/home/gennadii/karabasweb.com/logs/user_subscribed.log', $data, FILE_APPEND);
+//       } else
+//       {
+//        $data = date('Y.m.d H:i:s') . ': can not send POST REQUEST into MailGun Subscribed List' . PHP_EOL . json_encode($res) . " " . $model->email;
+//        file_put_contents('/home/gennadii/karabasweb.com/logs/user_subscribed.log', $data, FILE_APPEND);
+//       }
      }
    }
  }
